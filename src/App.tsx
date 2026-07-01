@@ -6,18 +6,19 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Education from './pages/Education';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      {/* We add a main tag and padding-top to account for the fixed navbar */}
       <main style={{ paddingTop: '80px', minHeight: 'calc(100vh - 100px)' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

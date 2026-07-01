@@ -240,6 +240,69 @@ section { padding: 6rem 4rem; }
 }
 .project-link:hover { gap: 0.8rem; }
 
+/* EDUCATION */
+.education-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  gap: 2.5rem; 
+  margin-top: 3rem; 
+}
+.education-card {
+  background: #fff; border: 2px solid var(--border);
+  border-radius: 24px; padding: 0;
+  display: flex; flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+  position: relative; overflow: hidden;
+  height: 100%;
+}
+.education-card::after {
+  content: ''; position: absolute; inset: 0; opacity: 0;
+  background: linear-gradient(to bottom right, rgba(168,85,247,0.05), rgba(236,72,153,0.05));
+  transition: opacity 0.4s; z-index: 0; border-radius: 22px;
+  pointer-events: none;
+}
+.education-card:hover { 
+  transform: translateY(-12px); 
+  box-shadow: 0 30px 60px rgba(108,43,217,0.15); 
+  border-color: transparent; 
+}
+.education-card:hover::after { opacity: 1; }
+.education-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.education-image-wrapper::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.1));
+}
+.education-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.education-card:hover .education-image {
+  transform: scale(1.08);
+}
+.education-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+}
+.education-content .eyebrow {
+  margin-bottom: 1rem;
+}
+.education-content .section-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
 /* CONTACT */
 #contact {
   background: var(--off);
