@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
       <div className="hero-image" style={{ flex: 1, display: 'flex', justifyContent: 'center', minWidth: '300px' }}>
-        <img src={profileImage} alt="Kavish Varun" style={{ width: '100%', maxWidth: '400px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(108,43,217,0.2)', objectFit: 'cover' }} />
+        <img src={profileImage} alt="Kavish Varun" className="antigravity" style={{ width: '100%', maxWidth: '400px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(108,43,217,0.2)', objectFit: 'cover' }} />
       </div>
     </section>
   );

@@ -1023,3 +1023,66 @@ section {
     gap: 2rem;
   }
 }
+
+/* Antigravity Animation */
+@keyframes antigravity {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.antigravity {
+  animation: antigravity 6s ease-in-out infinite;
+}
+
+/* Custom Cursor */
+body, a, button, input, textarea {
+  cursor: none;
+}
+
+.water-cursor-main {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: var(--cyan);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+  box-shadow: 0 0 10px var(--cyan);
+}
+
+.water-ripple {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  animation: ripple-anim 0.8s ease-out forwards;
+}
+
+@keyframes ripple-anim {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    border-width: 0px;
+  }
+}

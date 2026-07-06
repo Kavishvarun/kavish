@@ -8,6 +8,7 @@ export default function About() {
             <img
               src={profileImage}
               alt="Kavish Varun"
+              className="antigravity"
               style={{
                 width: '100%',
                 height: 'auto',
