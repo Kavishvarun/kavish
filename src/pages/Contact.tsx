@@ -61,6 +61,14 @@ export default function Contact() {
               <a href="mailto:kavishkavish227@gmail.com">kavishkavish227@gmail.com</a>
             </div>
           </div>
+
+          <div className="contact-item">
+            <div className="contact-icon">📷</div>
+            <div className="contact-info">
+              <h4>Instagram</h4>
+              <a href="https://www.instagram.com/kavish_varun/?hl=en" target="_blank" rel="noopener noreferrer">kavish_varun</a>
+            </div>
+          </div>
         </div>
 
         {/* Enquiry Form */}
