@@ -1,5 +1,6 @@
 import profileImage from '../assets/images/SAMS.png';
 import profileImage2 from '../assets/images/dsce_1.jpg';
+import ScrollReveal from '../components/ScrollReveal';
 export default function Education() {
     const educationData = [
         {
@@ -32,21 +33,23 @@ export default function Education() {
 
             <div className="education-grid">
                 {educationData.map((edu, index) => (
-                    <div className="education-card" key={index}>
-                        <div className="education-image-wrapper">
-                            <img
-                                src={edu.image}
-                                alt={edu.institution}
-                                className="education-image"
-                            />
+                    <ScrollReveal key={index} delay={index * 0.1}>
+                        <div className="education-card">
+                            <div className="education-image-wrapper">
+                                <img
+                                    src={edu.image}
+                                    alt={edu.institution}
+                                    className="education-image"
+                                />
+                            </div>
+                            <div className="education-content">
+                                <div className="eyebrow">{edu.institution}</div>
+                                <h3 className="section-title">{edu.degree}</h3>
+                                <p style={{ color: 'var(--muted)', fontWeight: '600' }}>{edu.score}</p>
+                                <p style={{ color: 'var(--muted)', marginTop: 'auto', paddingTop: '1rem' }}>{edu.year}</p>
+                            </div>
                         </div>
-                        <div className="education-content">
-                            <div className="eyebrow">{edu.institution}</div>
-                            <h3 className="section-title">{edu.degree}</h3>
-                            <p style={{ color: 'var(--muted)', fontWeight: '600' }}>{edu.score}</p>
-                            <p style={{ color: 'var(--muted)', marginTop: 'auto', paddingTop: '1rem' }}>{edu.year}</p>
-                        </div>
-                    </div>
+                    </ScrollReveal>
                 ))}
             </div>
         </section>
