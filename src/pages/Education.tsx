@@ -1,5 +1,5 @@
 import profileImage from '../assets/images/SAMS.png';
-import profileImage2 from '../assets/images/dsce_1.jpg';
+import profileImage2 from '../assets/images/dsce_1.JPG';
 import ScrollReveal from '../components/ScrollReveal';
 export default function Education() {
     const educationData = [
