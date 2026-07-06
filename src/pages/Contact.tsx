@@ -26,6 +26,22 @@ export default function Contact() {
           </div>
 
           <div className="contact-item">
+            <div className="contact-icon">📅</div>
+            <div className="contact-info">
+              <h4>DOB</h4>
+              <p> 15 /10/2003</p>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <div className="contact-icon">🎓</div>
+            <div className="contact-info">
+              <h4>Education</h4>
+              <p>B.Tech, Artificial Intelligence and Data Science </p>
+            </div>
+          </div>
+
+          <div className="contact-item">
             <div className="contact-icon">🎓</div>
             <div className="contact-info">
               <h4>College</h4>
@@ -59,6 +75,14 @@ export default function Contact() {
             <div className="contact-info">
               <h4>Email</h4>
               <a href="mailto:kavishkavish227@gmail.com">kavishkavish227@gmail.com</a>
+            </div>
+          </div>
+
+          <div className="contact-item">
+            <div className="contact-icon"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="linkedin" /></div>
+            <div className="contact-info">
+              <h4>Linkedin</h4>
+              <a href="https://www.linkedin.com/in/kavish-varun-006174228/">KAVISH VARUN</a>
             </div>
           </div>
 
