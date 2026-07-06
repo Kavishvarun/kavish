@@ -7,6 +7,7 @@ import Projects from '../pages/Projects';
 import Education from '../pages/Education';
 import Internship from '../pages/Internship';
 import Contact from '../pages/Contact';
+import Experience from '../pages/Experience';
 import type { ReactNode } from 'react';
 
 const pageVariants = {
@@ -48,6 +49,7 @@ export default function AnimatedRoutes() {
         <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
         <Route path="/education" element={<PageWrapper><Education /></PageWrapper>} />
         <Route path="/internship" element={<PageWrapper><Internship /></PageWrapper>} />
+        <Route path="/experience" element={<PageWrapper><Experience /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
       </Routes>
     </AnimatePresence>

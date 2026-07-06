@@ -7,9 +7,9 @@ export default function Home() {
       <div className="hero-content" style={{ flex: 1, minWidth: '300px' }}>
         <div className="hero-tag"><span className="dot"></span> B.Tech AI &amp; Data Science</div>
         <h1>
-          <span className="hi">Hi, I'm</span><br/>
-          <span className="grad-name">Kavish Varun.</span><br/>
-          <span className="hi">I build AI that</span><br/>
+          <span className="hi">Hi, I'm</span><br />
+          <span className="grad-name">Kavish Varun.</span><br />
+          <span className="hi">I build AI that</span><br />
           <span className="hi">matters.</span>
         </h1>
         <div className="badges-row">
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </div>
       <div className="hero-image" style={{ flex: 1, display: 'flex', justifyContent: 'center', minWidth: '300px' }}>
-        <img src={profileImage} alt="Kavish Varun" className="antigravity" style={{ width: '100%', maxWidth: '400px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(108,43,217,0.2)', objectFit: 'cover' }} />
+        <img src={profileImage} alt="Kavish Varun" className="ant igravity" style={{ width: '100%', maxWidth: '400px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(108,43,217,0.2)', objectFit: 'cover' }} />
       </div>
     </section>
   );
