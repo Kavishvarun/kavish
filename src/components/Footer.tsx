@@ -16,11 +16,7 @@ export default function Footer() {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/skills">Skills</Link></li>
               <li><Link to="/projects">Projects</Link></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>Experience</h4>
-            <ul>
+              <li><Link to="/experience">Experience</Link></li>
               <li><Link to="/education">Education</Link></li>
               <li><Link to="/internship">Internship &amp; Training</Link></li>
               <li><Link to="/contact">Contact</Link></li>

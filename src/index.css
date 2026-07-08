@@ -1070,8 +1070,16 @@ section {
 }
 
 /* Custom Cursor */
-body, a, button, input, textarea {
-  cursor: none;
+@media (pointer: fine) {
+  body, a, button, input, textarea {
+    cursor: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .water-cursor-main, .water-ripple {
+    display: none !important;
+  }
 }
 
 .water-cursor-main {
