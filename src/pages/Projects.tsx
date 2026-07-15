@@ -37,6 +37,18 @@ export default function Projects() {
             <a href="https://prathithadp.com/" target="_blank" rel="noreferrer" className="project-link">Live Demo →</a>
           </div>
         </ScrollReveal>
+        <ScrollReveal delay={0.3}>
+          <div className="project-card" style={{ '--pc-grad': 'linear-gradient(135deg, rgba(255,247,237,0.8), rgba(253,244,255,0.8))' } as React.CSSProperties}>
+            <span className="badge badge-web">🌐 Chatbot </span>
+            <h3 className="project-title">Rajakala Printers Chatbot</h3>
+            <p className="project-desc">A fully responsive, chatbot — featuring Greeting messages, contact options, and a connecting bridge to the customer and employee .</p>
+            <div className="tag-row">
+              <span className="tag">python</span>
+
+            </div>
+            <a href="https://github.com/" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

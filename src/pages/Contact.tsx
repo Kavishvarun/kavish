@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
     <section id="contact">
-      <h2 className="section-title">Contact <span className="contact-title-grad">Us</span></h2>
-      <p className="section-desc">Have questions? We'd love to hear from you. Get in touch with our team today!</p>
+      <h2 className="section-title">Contact <span className="contact-title-grad">Me</span></h2>
+      <p className="section-desc">Have questions? I'd love to hear from you. Get in touch with me today!</p>
 
       <div className="contact-grid">
         {/* About Me Details replacing the map */}
