@@ -10,6 +10,7 @@ export default function CustomCursor() {
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [hiddenOverride, setHiddenOverride] = useState(false);
   
   const lastRipplePos = useRef({ x: 0, y: 0 });
 
@@ -39,19 +40,25 @@ export default function CustomCursor() {
 
     const onMouseLeave = () => setIsVisible(false);
     const onMouseEnter = () => setIsVisible(true);
+    const onHideCursor = () => setHiddenOverride(true);
+    const onShowCursor = () => setHiddenOverride(false);
 
     window.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseleave', onMouseLeave);
     document.addEventListener('mouseenter', onMouseEnter);
+    window.addEventListener('hide-custom-cursor', onHideCursor);
+    window.addEventListener('show-custom-cursor', onShowCursor);
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseleave', onMouseLeave);
       document.removeEventListener('mouseenter', onMouseEnter);
+      window.removeEventListener('hide-custom-cursor', onHideCursor);
+      window.removeEventListener('show-custom-cursor', onShowCursor);
     };
   }, []);
 
-  if (!isVisible) return null;
+  if (!isVisible || hiddenOverride) return null;
 
   return (
     <>
